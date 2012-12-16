@@ -1,7 +1,7 @@
 <% content_for :scripts do %>
-<%= javascript_include_tag *js_dependencies %>
+<%= javascript_include_tag defer: "defer", *js_dependencies %>
 
-<script type="text/javascript">
+<script type="text/javascript" defer="defer">
 <%=raw options.to_gmaps4rails %>
 </script>
 <% end %>
